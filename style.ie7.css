@@ -1,0 +1,123 @@
+
+.mgadl-header, #mgadl-header-bg, .mgadl-layout-cell, .mgadl-layout-wrapper, .mgadl-footer, .mgadl-nav, #mgadl-hmenu-bg, .mgadl-sheet,
+.clearfix {
+   zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).className="cleared");
+}
+
+.mgadl-textblock > div {
+   display: block;
+   line-height: normal;
+   zoom: 1;
+}
+
+.mgadl-header
+{
+   z-index: 1;
+   background-image: [headerimage];
+   background-position: [headerposition];
+}
+
+#mgadl-header-bg 
+{
+   display: none;
+}
+
+.mgadl-hmenu>li, .mgadl-hmenu>li>a
+{
+   display: inline !important;
+   zoom: 1;
+   float: none !important;
+   vertical-align: top;
+}
+ul.mgadl-hmenu, ul.mgadl-hmenu ul {
+   zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).className="cleared");
+}
+#mgadl-hmenu-bg 
+{
+   display: none;
+}
+
+ul.mgadl-hmenu>li:first-child {
+   padding-right:4px;
+}
+ul.mgadl-hmenu>li{
+   zoom:expression(runtimeStyle.zoom=1,insertBefore(document.createElement('span'),firstChild).className='mgadl-hmenu-separator');
+}
+ul.mgadl-hmenu>li>span.mgadl-hmenu-separator
+{
+   position:absolute;
+   display: block;
+   top:0;
+   left:  -4px;
+   width: 4px;
+   height: 35px;
+   background: url('images/menuseparator.png') center center no-repeat;
+}
+ul.mgadl-hmenu>li:first-child>span.mgadl-hmenu-separator
+{
+   display:none;
+}
+
+ul.mgadl-hmenu ul{
+   background-color: #EFF2F5 !important;
+}
+
+.mgadl-content-layout, .mgadl-content-layout-row, .mgadl-layout-cell 
+{
+   display: block;
+   zoom: 1;
+}
+.mgadl-layout-cell
+{
+   position:relative;
+   float: left;
+   clear: right;
+}
+
+input[type="text"]
+{
+   margin:0 0 0 -3px;
+   zoom:expression(runtimeStyle.zoom = 1, parentNode.insertBefore(document.createElement('div'), this).appendChild(this));
+}
+
+* html input[type="text"]
+{
+   margin :0;
+}
+
+form.mgadl-search>input[type="text"]
+{
+   margin:0 0 0 -3px;
+   zoom:expression(runtimeStyle.zoom = 1, parentNode.insertBefore(document.createElement('div'), this).appendChild(this));
+}
+
+form.mgadl-search div>input[type="text"]
+{
+   width: 100%;
+}
+
+* html form.mgadl-search>input[type="text"] 
+{
+   margin :0;
+}
+
+.mgadl-postheadericons span{
+   zoom: 1;
+}
+.mgadl-postcontent {
+   height: 1%;
+}
+
+.close-alt, .arrow-right-alt, .arrow-left-alt {
+   display: block !important;
+}
+.cw, .ccw {
+   display: none !important;
+}
+
+.mgadl-content 
+{
+   width: auto;
+   float:none;
+}
+
